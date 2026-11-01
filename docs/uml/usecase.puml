@@ -1,0 +1,19 @@
+@startuml Use Case
+left to right direction
+
+:User: as u
+
+package "Manage Colors" {
+    usecase "Add Color" as add
+    usecase "Search Colors" as search
+}
+
+package "Manage User" {
+    usecase "Log In" as login
+}
+
+u -> login
+u --> add
+u -> search
+
+@enduml
