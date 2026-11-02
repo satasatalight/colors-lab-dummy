@@ -1,0 +1,34 @@
+@startuml Activity Diagram
+start
+:User Attempts to Log into the service by 
+providing Username and Password credentials
+/api/Login.php;
+:Try to match credentials with database "Users" table;
+if(Credentials are correct?) then (yes)
+    :Return firstname, lastname, and user ID;
+    stop
+else (no)
+    :Return "No Records Found" Error;
+    end
+endif
+
+start
+:User Attempts to add a color to their library 
+by providing a User ID and Color
+/api/AddColor.php;
+:Add color to database under primary key User ID;
+stop
+
+start
+:User attempts to search for a color in their library by 
+providing a User ID and Search Term
+/api/SearchColors.php;
+:Try to find colors that exactly match the User ID and 
+partially match the Search Term in the database;
+if (Matches are found?) then (yes)
+    :Return a list of matched colors;
+    stop
+else (no)
+    :Return "No Records Found" Error;
+    end
+@enduml
