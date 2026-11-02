@@ -1,0 +1,19 @@
+@startuml "Class Diagram"
+
+class Users {
+    ID
+    FirstName
+    LastName
+    Login
+    Password
+}
+
+class Colors {
+    ID
+    Name
+    UserID
+}
+
+Users --> Colors : UserID
+
+@enduml
