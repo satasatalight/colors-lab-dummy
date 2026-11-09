@@ -1,0 +1,23 @@
+{
+  "name": "colors-lab-dummy",
+  "version": "1.0.0",
+  "description": "This repository is an example exercise in git best practices. It contains example code for a web app that stores and displays entered colors according to a user login.",
+  "homepage": "https://github.com/satasatalight/colors-lab-dummy#readme",
+  "bugs": {
+    "url": "https://github.com/satasatalight/colors-lab-dummy/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satasatalight/colors-lab-dummy.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
